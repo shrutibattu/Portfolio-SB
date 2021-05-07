@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+$font-body:"Roboto",sans-serif;
+$font-display: "Roboto slab";
+$color-desktop:#91091E;
+$color-portfolio:#DA723C;
+$color-contact:#FDF1D6;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-body;
+  color:$color-contact;
+}
+* {
+  text-decoration: none;
+}

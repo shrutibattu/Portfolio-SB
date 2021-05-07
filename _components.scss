@@ -1,0 +1,84 @@
+@use "./base" as *;
+
+
+.button {
+  font-family: $font-display;
+  font-size: 10px;
+  color: $color-contact;
+}
+
+
+
+
+
+.about-page__name {
+  
+font-family: $font-display;
+color: #FDF1D6;
+font-size: 30px;
+}
+
+.about-page__title {
+  
+  font-family: $font-display;
+  color: $color-contact;
+  font-size: 20px;
+}
+.about-page__intro {
+  font-family: $font-display;
+  color: $color-contact;
+  font-size: 10px;
+}
+  
+ .portfolio-page__grid{
+   margin-left: 50px;
+  height: 250px;
+   width: 300px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  .far {
+    font-size: 75px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .grid-heading {
+    font-size: 25px;
+    grid-row: 2 /2;
+  }
+  
+  .file1 {
+    font-size: 50px;
+    grid-column:3 / 4;
+  }
+  .file2 {
+    font-size: 50px;
+    grid-column:3 / 4;
+  }
+  .file3 {
+    font-size: 50px;
+    grid-column:3 / 4;
+  }
+
+} 
+.Contact-page{
+  height: 50vh;
+  background-color: #FDF1D6;
+  
+
+  h3 {
+    
+    padding-top: 20px;
+    padding-left: 20px; 
+    color:$color-desktop;
+  }
+  .footer {
+    color: $color-desktop;
+    
+  }
+}
+
+
+

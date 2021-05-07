@@ -1,0 +1,33 @@
+@use "./base" as *;
+
+
+.navigation {
+  background-color: $color-desktop;
+  height: 10vh;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;}
+
+  .nav-link {
+    font-family: $font-display;
+    font-size: 15px;
+    color: $color-contact;
+  }
+.about-page {
+  background-color:$color-desktop;
+  height : 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.portfolio-page{
+  
+  background-color: $color-portfolio;
+  height: 50vh;
+  display: flex;
+  
+  align-items: center;
+}
