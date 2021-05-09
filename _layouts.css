@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  color: #FDF1D6;
+  color: #9ba4b4;
 }
 
 * {
@@ -12,23 +12,26 @@
 }
 
 .navigation {
-  background-color: #91091E;
+  background-color: #14274e;
   height: 10vh;
   padding: 0 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  list-style: none;
 }
 
 .nav-link {
+  position: fixed;
   font-family: "Roboto slab";
   font-size: 15px;
-  color: #FDF1D6;
+  font-weight: bold;
+  color: #9ba4b4;
 }
 
 .about-page {
-  background-color: #91091E;
-  height: 50vh;
+  background-color: #14274e;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,8 +39,17 @@
 }
 
 .portfolio-page {
-  background-color: #DA723C;
-  height: 50vh;
+  background-color: #394867;
+  height: 100vh;
   display: flex;
+  align-items: center;
+}
+
+.Contact-page {
+  height: 100vh;
+  background-color: #FDF1D6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }

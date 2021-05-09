@@ -4,34 +4,39 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  color: #FDF1D6;
+  color: #9ba4b4;
 }
 
 * {
   text-decoration: none;
 }
 
-.button {
-  font-family: "Roboto slab";
-  font-size: 10px;
-  color: #FDF1D6;
-}
-
 .about-page__name {
+  animation: type 3s steps(12);
+  overflow: hidden;
+  white-space: nowrap;
   font-family: "Roboto slab";
   color: #FDF1D6;
   font-size: 30px;
 }
 
+@keyframes type {
+  0% {
+    width: 0ch;
+    100% {
+      width: 12ch;
+    }
+  }
+}
 .about-page__title {
   font-family: "Roboto slab";
-  color: #FDF1D6;
+  color: #9ba4b4;
   font-size: 20px;
 }
 
 .about-page__intro {
   font-family: "Roboto slab";
-  color: #FDF1D6;
+  color: #9ba4b4;
   font-size: 10px;
 }
 
@@ -50,8 +55,19 @@
   grid-column: 1/2;
 }
 .portfolio-page__grid .grid-heading {
+  animation: type 3s steps(9);
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 25px;
   grid-row: 2/2;
+}
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 9ch;
+  }
 }
 .portfolio-page__grid .file1 {
   font-size: 50px;
@@ -66,15 +82,24 @@
   grid-column: 3/4;
 }
 
-.Contact-page {
-  height: 50vh;
-  background-color: #FDF1D6;
-}
-.Contact-page h3 {
+.contact-page h3 {
   padding-top: 20px;
   padding-left: 20px;
-  color: #91091E;
+  color: #14274e;
 }
-.Contact-page .footer {
-  color: #91091E;
+.contact-page p {
+  color: black;
+}
+.contact-page .contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.contact-page .footer {
+  padding-bottom: 30px;
+  height: 20px;
+  background-color: #14274e;
+}
+.contact-page .icon {
+  font-size: 25px;
+  color: black;
 }

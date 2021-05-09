@@ -1,22 +1,28 @@
 @use "./base" as *;
 
 
-.button {
-  font-family: $font-display;
-  font-size: 10px;
-  color: $color-contact;
-}
-
-
-
 
 
 .about-page__name {
-  
+  animation: type 3s steps(12);
+  overflow: hidden;
+  white-space: nowrap;
 font-family: $font-display;
 color: #FDF1D6;
 font-size: 30px;
+
+
 }
+@keyframes type {
+  0% {
+    width: 0ch;
+
+   100% {
+     width:12ch;
+   } 
+  }
+}
+
 
 .about-page__title {
   
@@ -45,8 +51,21 @@ font-size: 30px;
     grid-column: 1 / 2;
   }
   .grid-heading {
+    animation: type 3s steps(9);
+    overflow:hidden;
+    white-space: nowrap;
     font-size: 25px;
     grid-row: 2 /2;
+  }
+  @keyframes type {
+    0% {
+      width: 0ch;
+    }
+    100% {
+      width:9ch;
+    }
+
+    
   }
   
   .file1 {
@@ -63,22 +82,38 @@ font-size: 30px;
   }
 
 } 
-.Contact-page{
-  height: 50vh;
-  background-color: #FDF1D6;
-  
 
-  h3 {
-    
+.contact-page{
+ h3 {
     padding-top: 20px;
     padding-left: 20px; 
     color:$color-desktop;
   }
+
+  p {
+    color: black;
+  }
+  .contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  
   .footer {
-    color: $color-desktop;
+    padding-bottom:30px;
+    height: 20px;
+    background-color:$color-desktop;
     
   }
+  .icon {
+    
+    font-size: 25px;
+    color: black;
+
+  }
 }
+
+
 
 
 
