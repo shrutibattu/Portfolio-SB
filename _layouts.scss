@@ -21,9 +21,7 @@
     font-weight: bold;
     color: $color-contact;
   }
-@media screen and (max-width:768px){
-  
-}
+
   
 
 .about-page {
@@ -36,10 +34,11 @@
 
 }
 .portfolio-page{
-  
+ 
   background-color: $color-portfolio;
   height: 100vh;
   display: flex;
+  
   
   align-items: center;
 }

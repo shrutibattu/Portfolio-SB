@@ -41,7 +41,7 @@
 }
 
 .portfolio-page__grid {
-  margin-left: 50px;
+  margin-left: 75px;
   height: 250px;
   width: 300px;
   display: grid;
@@ -53,6 +53,10 @@
   font-size: 75px;
   grid-row: 1/2;
   grid-column: 1/2;
+}
+.portfolio-page__grid .far:hover {
+  color: aqua;
+  transform: scale(0.5);
 }
 .portfolio-page__grid .grid-heading {
   animation: type 3s steps(9);
@@ -73,33 +77,58 @@
   font-size: 50px;
   grid-column: 3/4;
 }
-.portfolio-page__grid .file2 {
-  font-size: 50px;
-  grid-column: 3/4;
+
+.file1:hover {
+  transform: rotate(90deg) scale(2) translate(-50%) translate(50%);
 }
-.portfolio-page__grid .file3 {
+
+.file2 {
   font-size: 50px;
   grid-column: 3/4;
 }
 
-.contact-page h3 {
+.file2:hover {
+  transform: rotate(90deg) scale(2) translate(-50%) translate(50%);
+}
+
+.file3 {
+  font-size: 50px;
+  grid-column: 3/4;
+}
+
+.file3:hover {
+  transform: rotate(90deg) scale(2) translate(-50%) translate(50%);
+}
+
+h3 {
+  margin-top: 20px;
   padding-top: 20px;
   padding-left: 20px;
   color: #14274e;
 }
-.contact-page p {
-  color: black;
+
+p {
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #14274e;
 }
-.contact-page .contact-grid {
+
+.contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.contact-page .footer {
-  padding-bottom: 30px;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 10px;
+  padding: 5vh;
   height: 20px;
   background-color: #14274e;
 }
-.contact-page .icon {
-  font-size: 25px;
-  color: black;
+
+.icon {
+  font-size: 30px;
+  color: #9ba4b4;
 }
