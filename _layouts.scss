@@ -5,31 +5,31 @@ body {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 }
-.navigation {
-  background-color: $color-desktop;
-  position: fixed;
-  height: 7vh;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-  border: 2px solid $color-desktop;
-}
-.nav-link {
-  // position: fixed;
-  font-family: $color-desktop;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fdf1d6;
-}
+// .navigation {
+//   background-color: $color-desktop;
+//   position: fixed;
+//   height: 7vh;
+//   padding: 0 40px;
+//   display: flex;s
+//   align-items: center;
+//   justify-content: space-around;
+//   list-style: none;
+//   border: 2px solid $color-desktop;
+// }
+// .nav-link {
+//   // position: fixed;
+//   font-family: $color-desktop;
+//   font-size: 20px;
+//   font-weight: bold;
+//   color: #fdf1d6;
+// }
 
 .about-page {
   background-image: url(./images/joshua-hanson-D3yfiuKCP_I-unsplash.jpg);
   background-size: 100%;
-
+  height: 100vh;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,7 @@ body {
 .portfolio-page {
   background-color: #fdf1d6;
   width: 100%;
+  height: 100vh;
 
   // display: flex;
 
@@ -45,11 +46,92 @@ body {
 }
 .Contact-page {
   width: 100%;
+  height: 100vh;
   background-color: #fdf1d6;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+$mc: $color-desktop;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+#mbl {
+  /* 100% width will work for mobile menu, 300px for example */
+  width: 100%;
+  font-family: $font-display;
+  font-size: 16px;
+  position: fixed;
+  label {
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    color: lighten($mc, 25%);
+    background: $mc;
+    font-size: 24px;
+  }
+  span.fa {
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  input {
+    display: none;
+    &:checked ~ article {
+      transition: height 0.5s ease-in-out;
+      height: 150px;
+    }
+  }
+  article {
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 0;
+    transition: height 0.3s ease-in-out;
+    ul {
+      background: lighten($mc, 10%);
+      height: 100%;
+      margin: 0;
+      list-style: none;
+      li {
+        padding: 14px;
+        padding-left: 25px;
+        border-top: 2px solid darken($mc, 3%);
+        &:first-child {
+          padding-top: 16px;
+          border-top: 0;
+        }
+        &:hover {
+          background: lighten($mc, 14%);
+        }
+        a {
+          color: #fdf1d6;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+#mblBtm {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 5px;
+  overflow: hidden;
+  background: darken($mc, 20%);
 }
 @media (min-width: 600px) {
   .about-page {

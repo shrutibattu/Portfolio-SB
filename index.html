@@ -13,74 +13,36 @@
     ></script>
   </head>
   <body>
-    <nav>
-      <ul class="navigation">
-        <li><a href="./about.html" class="nav-link">About</a></li>
-        <li><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
-        <li><a href="./contact.html" class="nav-link">Contact</a></li>
-      </ul>
+    <nav id="mbl">
+      <!-- <section id="mbl"> -->
+      <div>
+        <input id="menu" name="mblmenu" type="checkbox" />
+        <label for="menu">MENU<span class="fa fa-bars"></span></label>
+        <article>
+          <ul class="caps">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </article>
+      </div>
+      <div id="mblBtm"></div>
     </nav>
 
-    <header class="about-page">
-      <h1 class="about-page__name">Shruti Battu</h1>
-      <h2 class="about-page__title">Web Developer</h2>
-    </header>
-
     <main>
+      <section>
+        <header class="about-page">
+          <h1 class="about-page__name">Shruti Battu</h1>
+          <h2 class="about-page__title">Web Developer</h2>
+        </header>
+      </section>
       <section class="portfolio-page">
-        <div class="folder-structure">
-          <ul>
-            <li>
-              <div class="far fa-file-archive"></div>
-              <div class="grid-heading">projects_</div>
-
-              <!-- Sub items -->
-              <ul>
-                <li>
-                  <div class="fas fa-folder-open file1"></div>
-                  <div class="grid-heading">Calculator</div>
-
-                  <!-- Sub items -->
-                </li>
-                <li>
-                  <div class="fas fa-folder-open file2"></div>
-                  <div class="grid-heading">Memory-Card-Game</div>
-                </li>
-                <li>
-                  <div class="fas fa-folder-open file3"></div>
-                  <div class="grid-heading">
-                    <div class="grid-heading">Project</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="fas fa-folder-open file4"></div>
-                  <div class="grid-heading">Project</div>
-                </li>
-                <li>
-                  <div class="fas fa-folder-open file5"></div>
-                  <div class="grid-heading">Project</div>
-                </li>
-                <li>
-                  <div class="fas fa-folder-open file6"></div>
-                  <div class="grid-heading">Project</div>
-                </li>
-              </ul>
-            </li>
-            <li><div class="fas fa-folder-open file7"></div></li>
-            <div class="grid-heading">Project</div>
-            <!-- Repeat other items -->
-          </ul>
+        <div class="grid-heading">Portfolio</div>
+        <h2>Click on the image to see the project description</h2>
+        <div id="Project-1">
+          <img src="Calculator" />
         </div>
-        <!-- <div class="portfolio-page__grid">   
-      
-      <div class="far fa-file-archive"></div>
-      <div class="grid-heading">projects_</div>
-      <div class="fas fa-folder-open file1"></div>
-      <div class="fas fa-folder-open file2"></div>
-      <div class="fas fa-folder-open file3"></div>
-      
-      
-    </div> -->
+        <div id="Project-2"></div>
       </section>
 
       <section class="Contact-page">

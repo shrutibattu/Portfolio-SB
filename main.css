@@ -34,20 +34,13 @@
   font-size: 20px;
 }
 
-.far {
-  font-size: 30px;
-  color: #14274e;
-}
-
-.far:hover {
-  transform: scale(1.5);
-}
-
 .grid-heading {
   animation: type 3s steps(9);
   overflow: hidden;
   white-space: nowrap;
-  font-size: 10px;
+  font-family: "Roboto slab";
+  font-size: 30px;
+  color: #14274e;
 }
 
 @keyframes type {
@@ -91,77 +84,19 @@ p {
   color: #9ba4b4;
 }
 
-:root {
-  --folder-structure-item-height: 1rem;
-  --folder-structure-item-margin-left: 2rem;
-  --folder-structure-item-padding-top: 1rem;
-}
-
-.folder-structure ul {
-  /* Reset */
-  list-style-type: none;
-  margin: 0;
-}
-
-.folder-structure li {
-  padding: var(--folder-structure-item-padding-top) 0rem 0rem 0rem;
-  position: relative;
-}
-
-.folder-structure li::before {
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
-  content: "";
-  /* Position */
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: translate(calc(-1 * var(--folder-structure-item-margin-left)), 0);
-  /* Size */
-  height: 100%;
-}
-
-.folder-structure li::after {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  content: "";
-  /* Position */
-  left: 0;
-  position: absolute;
-  top: calc( var(--folder-structure-item-padding-top) + var(--folder-structure-item-height) / 2 );
-  transform: translate(-100%, 0);
-  /* Size */
-  width: var(--folder-structure-item-margin-left);
-}
-
-/* Remove the border from the last item */
-.folder-structure li:last-child::before {
-  height: calc( var(--folder-structure-item-padding-top) + var(--folder-structure-item-height) / 2 );
-}
-
-.navigation {
-  background-color: #14274e;
-  position: fixed;
-  height: 7vh;
-  padding: 0 40px;
+body {
+  display: -webkit-flex;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-  border: 2px solid #14274e;
-}
-
-.nav-link {
-  font-family: #14274e;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fdf1d6;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .about-page {
   background-image: url(./images/joshua-hanson-D3yfiuKCP_I-unsplash.jpg);
   background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,19 +104,128 @@ p {
 
 .portfolio-page {
   background-color: #fdf1d6;
+  width: 100%;
   height: 100vh;
-  padding-left: 100px;
-  padding-top: 50px;
   align-items: center;
 }
 
 .Contact-page {
+  width: 100%;
   height: 100vh;
   background-color: #fdf1d6;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#mbl {
+  /* 100% width will work for mobile menu, 300px for example */
+  width: 100%;
+  font-family: "Roboto slab";
+  font-size: 16px;
+  position: fixed;
+}
+#mbl label {
+  display: block;
+  padding: 15px 20px;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  color: #2e5ab3;
+  background: #14274e;
+  font-size: 24px;
+}
+#mbl span.fa {
+  color: rgba(255, 255, 255, 0.5);
+  float: right;
+}
+#mbl span.fa:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+#mbl input {
+  display: none;
+}
+#mbl input:checked ~ article {
+  transition: height 0.5s ease-in-out;
+  height: 150px;
+}
+#mbl article {
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 0;
+  transition: height 0.3s ease-in-out;
+}
+#mbl article ul {
+  background: #1e3b77;
+  height: 100%;
+  margin: 0;
+  list-style: none;
+}
+#mbl article ul li {
+  padding: 14px;
+  padding-left: 25px;
+  border-top: 2px solid #112142;
+}
+#mbl article ul li:first-child {
+  padding-top: 16px;
+  border-top: 0;
+}
+#mbl article ul li:hover {
+  background: #234387;
+}
+#mbl article ul li a {
+  color: #fdf1d6;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#mblBtm {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 5px;
+  overflow: hidden;
+  background: black;
+}
+
+@media (min-width: 600px) {
+  .about-page {
+    width: 60%;
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .portfolio-page {
+    width: 40%;
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  .Contact-page {
+    width: 100%;
+    -webkit-order: 3;
+    order: 3;
+  }
+}
+@media (min-width: 800px) {
+  .portfolio-page {
+    width: 20%;
+  }
+
+  .Contact-page {
+    width: 20%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
