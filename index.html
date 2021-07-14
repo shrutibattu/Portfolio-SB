@@ -31,48 +31,106 @@
 
     <main>
       <section class="about-page">
-        <header >
+        <header>
           <h1 class="about-page__name">Shruti Battu</h1>
           <h2 class="about-page__title">Web Developer</h2>
         </header>
       </section>
       <section class="portfolio-page">
-        <div class="grid-heading">Portfolio</div>
-        <h2>Click on the image to see the project description</h2>
-        
+        <div class="grid-heading-container">
+          <div class="grid-heading">Portfolio</div>
+          <h4>Click on the image to see the project description</h4>
+        </div>
         <!-- ---------- -->
-        <div class="Calculator-container"></div>
-          <h2>Calculator Project</h2>
-          <img id="myBtn"src="images/calculator">
-          <div id = "myModal" class="modal">
-            <div class="modal-content">
+        <div class="portfolio-grid">
+          <div class="Calculator-container">
+            <h2>Calculator Project</h2>
+            <img id="myBtn" src="images/calculator" />
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
 
-              <span class="close">&times;</span>
+                <h2>Technologies used to create this project</h2>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+            </div>
+          </div>
 
-              <h2>Technologies used to create this project</h2>
-              <p>HTML</p>
-              <p>CSS</p>
+          <!-- ------------------------ -->
+          <div class="Memory-card-container">
+            <h2>Memory-Card-Game Project</h2>
+            <img id="myBtn" src="images/memory-card -game" />
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <h2>Technologies used to create this project</h2>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+            </div>
+          </div>
+          <!-- -------------------------- -->
+          <div class="Punkapi-Project-container">
+            <h2>Punkapi-Project</h2>
+            <img id="myBtn" src="images/punkapi" />
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <h2>Technologies used to create this project</h2>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ------------------------------ -->
+          <div class="Sci-mx-container">
+            <h2>Sci-mx Project</h2>
+            <img id="myBtn" src="images/sci-mx" />
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <h2>Technologies used to create this project</h2>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- --------------------------------- -->
+          <div class="Todo-app-container">
+            <h2>Todo-App Project</h2>
+            <img id="myBtn" src="images/todo-list1" />
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <h2>Technologies used to create this project</h2>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------------- -->
+          <div class="Portfolio-project-container">
+            <h2>Portfolio Project</h2>
+            <img id="myBtn" src="images/Portfolio" />
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <h2>Technologies used to create this project</h2>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
             </div>
           </div>
         </div>
-
-          
-        <!-- ------------------------ -->
-        <div class="Memory-card-container"></div>
-        <h2>Memory-Card-Game Project</h2>
-        <img id="myBtn"src="images/memory-card -game">
-        <div id = "myModal" class="modal">
-          <div class="modal-content">
-
-            <span class="close">&times;</span>
-
-            <h2>Technologies used to create this project</h2>
-            <p>HTML</p>
-            <p>CSS</p>
-          </div>
-        </div>
-      </div>
-      <!-- -------------------------- -->
+        <!-- ------------------------------------- -->
       </section>
 
       <section class="Contact-page">
@@ -89,41 +147,41 @@
           <div class="fab fa-github icon"></div>
         </div>
       </section>
-    </main>
-    <footer class="footer">
-      Get in touch
-      <div class="fab fa-linkedin icon"></div>
 
-      <div class="fas fa-envelope-square icon"></div>
-    </footer>
+      <footer class="footer">
+        Get in touch
+        <div class="fab fa-linkedin icon"></div>
+
+        <div class="fas fa-envelope-square icon"></div>
+      </footer>
+    </main>
     <!-- ----------------- -->
     <script>
       // Get the modal
       var modal = document.getElementById("myModal");
-      
+
       // Get the button that opens the modal
       var btn = document.getElementById("myBtn");
-      
+
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks the button, open the modal 
-      btn.onclick = function() {
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
         modal.style.display = "block";
-      }
-      
+      };
+
       // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
+      span.onclick = function () {
         modal.style.display = "none";
-      }
-      
+      };
+
       // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
+      window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
         }
-      }
-      </script>
-      
+      };
+    </script>
   </body>
 </html>
