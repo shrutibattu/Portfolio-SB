@@ -119,71 +119,116 @@ body {
   padding: 0;
 }
 
-#mbl {
-  /* 100% width will work for mobile menu, 300px for example */
-  width: 100%;
-  font-family: "Roboto slab";
-  font-size: 16px;
-  position: fixed;
+@media screen and (max-width: 800px) {
+  #mbl {
+    /* 100% width will work for mobile menu, 300px for example */
+    width: 100%;
+    font-family: "Roboto slab";
+    font-size: 16px;
+    position: fixed;
+  }
+  #mbl label {
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    color: #2e5ab3;
+    background: #14274e;
+    font-size: 24px;
+  }
+  #mbl span.fa {
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
+  }
+  #mbl span.fa:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mbl input {
+    display: none;
+  }
+  #mbl input:checked ~ article {
+    transition: height 0.5s ease-in-out;
+    height: 150px;
+  }
+  #mbl article {
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 0;
+    transition: height 0.3s ease-in-out;
+  }
+  #mbl article ul {
+    background: #1e3b77;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+  }
+  #mbl article ul li {
+    padding: 14px;
+    padding-left: 25px;
+    border-top: 2px solid #112142;
+  }
+  #mbl article ul li:first-child {
+    padding-top: 16px;
+    border-top: 0;
+  }
+  #mbl article ul li:hover {
+    background: #234387;
+  }
+  #mbl article ul li a {
+    color: #fdf1d6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
 }
-#mbl label {
-  display: block;
-  padding: 15px 20px;
-  margin: 0;
-  position: relative;
-  z-index: 2;
-  cursor: pointer;
-  color: #2e5ab3;
-  background: #14274e;
-  font-size: 24px;
+@media screen and (min-width: 800px) {
+  #mbl {
+    /* 100% width will work for mobile menu, 300px for example */
+    width: 100%;
+    font-family: "Roboto slab";
+    font-size: 16px;
+    position: fixed;
+  }
+  #mbl label {
+    display: none;
+  }
+  #mbl span.fa {
+    display: none;
+  }
+  #mbl input {
+    display: none;
+  }
+  #mbl ul {
+    background: #14274e;
+    height: 10vh;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  #mbl ul li {
+    padding: 14px;
+    padding-left: 25px;
+    border-top: 2px solid #112142;
+  }
+  #mbl ul li:first-child {
+    padding-top: 16px;
+    border-top: 0;
+  }
+  #mbl ul li:hover {
+    background: #234387;
+  }
+  #mbl ul li a {
+    color: #fdf1d6;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+  }
 }
-#mbl span.fa {
-  color: rgba(255, 255, 255, 0.5);
-  float: right;
-}
-#mbl span.fa:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-#mbl input {
-  display: none;
-}
-#mbl input:checked ~ article {
-  transition: height 0.5s ease-in-out;
-  height: 150px;
-}
-#mbl article {
-  margin-top: -1px;
-  overflow: hidden;
-  height: 0px;
-  position: relative;
-  z-index: 0;
-  transition: height 0.3s ease-in-out;
-}
-#mbl article ul {
-  background: #1e3b77;
-  height: 100%;
-  margin: 0;
-  list-style: none;
-}
-#mbl article ul li {
-  padding: 14px;
-  padding-left: 25px;
-  border-top: 2px solid #112142;
-}
-#mbl article ul li:first-child {
-  padding-top: 16px;
-  border-top: 0;
-}
-#mbl article ul li:hover {
-  background: #234387;
-}
-#mbl article ul li a {
-  color: #fdf1d6;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-}
-
 #mblBtm {
   width: 100%;
   margin: 0;
@@ -207,8 +252,10 @@ p {
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  background-color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer {
@@ -225,7 +272,7 @@ p {
 
 .icon {
   font-size: 30px;
-  color: #2e5ab3;
+  color: #fdf1d6;
 }
 
 body {

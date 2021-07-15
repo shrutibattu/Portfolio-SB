@@ -20,9 +20,9 @@
         <label for="menu">MENU<span class="fa fa-bars"></span></label>
         <article>
           <ul class="caps">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </article>
       </div>
@@ -30,13 +30,13 @@
     </nav>
 
     <main>
-      <section class="about-page">
+      <section id = "about"class="about-page">
         <header>
           <h1 class="about-page__name">Shruti Battu</h1>
-          <h2 class="about-page__title">Web Developer</h2>
+          <!-- <h2 class="about-page__title">Web Developer</h2> -->
         </header>
       </section>
-      <section class="portfolio-page">
+      <section id="portfolio"class="portfolio-page">
         <div class="grid-heading-container">
           <div class="grid-heading">Portfolio</div>
           <h4>Click on the image to see the project description</h4>
@@ -45,115 +45,87 @@
         <div class="portfolio-grid">
           <div class="Calculator-container">
             <h2>Calculator Project</h2>
-            <img id="myBtn" src="images/calculator" />
-            <div id="myModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-
-                <h2>Technologies used to create this project</h2>
-                <p>HTML</p>
-                <p>CSS</p>
-              </div>
+              <a href="https://github.com/shrutibattu/Calculator">
+                <img  src="images/calculator" >
+              </a>
             </div>
-          </div>
+         
 
           <!-- ------------------------ -->
           <div class="Memory-card-container">
             <h2>Memory-Card-Game Project</h2>
-            <img id="myBtn" src="images/memory-card -game" />
-            <div id="myModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-
-                <h2>Technologies used to create this project</h2>
-                <p>HTML</p>
-                <p>CSS</p>
-              </div>
-            </div>
+            <a href="https://github.com/shrutibattu/Memory-card-game">
+              <img  src="images/memory-card -game" >
+            </a>
+            
           </div>
           <!-- -------------------------- -->
           <div class="Punkapi-Project-container">
             <h2>Punkapi-Project</h2>
-            <img id="myBtn" src="images/punkapi" />
-            <div id="myModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-
-                <h2>Technologies used to create this project</h2>
-                <p>HTML</p>
-                <p>CSS</p>
-              </div>
-            </div>
+            <a href="https://github.com/shrutibattu/punkapi-app">
+              <img  src="images/punkapi" >
+            </a>  
+          
           </div>
 
           <!-- ------------------------------ -->
           <div class="Sci-mx-container">
             <h2>Sci-mx Project</h2>
-            <img id="myBtn" src="images/sci-mx" />
-            <div id="myModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-
-                <h2>Technologies used to create this project</h2>
-                <p>HTML</p>
-                <p>CSS</p>
-              </div>
-            </div>
+            <a href="https://github.com/nology-tech/sci-mx">
+              <img  src="images/sci-mx" >
+            </a>            
           </div>
 
           <!-- --------------------------------- -->
           <div class="Todo-app-container">
-            <h2>Todo-App Project</h2>
-            <img id="myBtn" src="images/todo-list1" />
-            <div id="myModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-
-                <h2>Technologies used to create this project</h2>
-                <p>HTML</p>
-                <p>CSS</p>
-              </div>
-            </div>
+            <h2>Todo-list-App Project</h2>
+            <a href="https://github.com/shrutibattu/todo-list-app">
+              <img  src="images/todo-list1" >
+            </a>  
           </div>
           <!-- ----------------------------------- -->
-          <div class="Portfolio-project-container">
-            <h2>Portfolio Project</h2>
-            <img id="myBtn" src="images/Portfolio" />
-            <div id="myModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-
-                <h2>Technologies used to create this project</h2>
-                <p>HTML</p>
-                <p>CSS</p>
-              </div>
+          
+          
+          <div class="Translator-Project-container">
+            <h2>Translator Project</h2>
+            <a href="https://github.com/shrutibattu/Translator">
+              <img id="myBtn" src="images/translator" >
+            </a>           
             </div>
           </div>
         </div>
-        <!-- ------------------------------------- -->
+        <!-- --------------------------------------- -->
       </section>
 
-      <section class="Contact-page">
+      <section id ="contact"class="Contact-page">
         <h3>Skills</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae harum
-          provident ab consequuntur similique cumque tempora reiciendis,
-          distinctio fugit nulla incidunt iusto, rerum fuga dolor totam vel
-          corporis alias eveniet?
+        
+          I am a web-developer with a passion for coding and have completed a 12 week full-time software development course with _nology. I have experience with Agile Project Management and pair-programming, as well as a background in Finance. I am familiar with the following technologies:
         </p>
+        <br>
+        <p>
+
+           Problem Solving | Code Collaborations | Presentations | Team Work | GitHub |MySQL Databases | Authentication | Hosting | REST APIs
+        </p>
+
         <div class="contact-grid">
           <div class="fab fa-html5 icon"></div>
           <div class="fab fa-css3 icon"></div>
           <div class="fab fa-github icon"></div>
         </div>
-      </section>
+        
+        
+        
+      
 
       <footer class="footer">
         Get in touch
-        <div class="fab fa-linkedin icon"></div>
+        <a href = "www.linkedin.com/in/shruti-battu"><div class="fab fa-linkedin icon"></div></a>
 
-        <div class="fas fa-envelope-square icon"></div>
+        <a href = "https://github.com/shrutibattu"> <div class="fab fa-github icon"></div></a>
       </footer>
+    </section>
     </main>
     <!-- ----------------- -->
     <script>
